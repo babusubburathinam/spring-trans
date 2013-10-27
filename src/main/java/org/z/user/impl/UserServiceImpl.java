@@ -11,10 +11,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService
 {
 
-    @Override
     public List<User> getAllUsers()
     {
-        User user = new User();
+        User user = new User(); 
         user.setId(1L);
         user.setName("test");
 
@@ -22,4 +21,5 @@ public class UserServiceImpl implements UserService
         users.add(user);
         return users;
     }
+
 }

@@ -12,13 +12,15 @@ import org.z.user.UserService;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:/services.xml"})
 public class UserServiceTest
 {
-    @Autowired
-    private UserService userService;
+    @Resource
+    private UserService userService = null;
 
     @Test
     public void testGetAllUsers()
